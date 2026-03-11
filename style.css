@@ -23,7 +23,7 @@ body {
     border-radius: 10px;
     text-align: center;
     padding: 30px;
-
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: rgba(255,255,255,0,2);
     backdrop-filter: blur(12px);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
@@ -33,7 +33,6 @@ body {
     font-size: 28px;
     margin-bottom: 25px;
     font-weight:700;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .label{
     color: #e0e0e0;
@@ -49,7 +48,6 @@ body {
     border-radius: 20px;
     border: none;
     font-weight: bold;
-    cursor: pointer;
     transition: 0.5s;
 }   
 
@@ -73,6 +71,31 @@ body {
     display: inline-block;
     padding: 5px;
     margin: 5px;
+    
+}
+#enviarWhatsapp{
+  opacity: 0;
+  transform:translateY(10px);
+  transition:all 0.7s ease;
+  display: block;
+  margin: 10px auto;
+  
+}
+#enviarWhatsapp.mostrar{
+    opacity: 1;
+    transform: translateY(0);
+    animation: pulse 1.5s infinite;
+}
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.05);}
+100%{transform:scale(1);}
+}
+.campo{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-direction: column;
     
 }
 

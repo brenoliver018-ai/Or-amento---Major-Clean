@@ -12,7 +12,7 @@
         <div class="container">
 
         <h1>Faça aqui seu orçamento gratuito</h1>
-        
+        <div class="campo">
     <label class="label" for="servico">Selecione o tipo de serviço:</label>
         
         <select id="servico">
@@ -21,6 +21,7 @@
         <option value="tapete">Tapete</option>
         <option value="banco">Banco Automotivo</option>
         </select>
+        </div>
         <br><br>
 
         <label for="qtd">Quantidade:</label>
@@ -39,7 +40,7 @@
 
         <p id="resultado"> Valor total: R$ 0</p>
         <br>
-         <button class="whatsapp" onclick="enviarWhatsapp()">Enviar orçamento no WhatsApp</button>
+         <button id="enviarWhatsapp" class="whatsapp" onclick="enviarWhatsapp()">Enviar orçamento no WhatsApp</button>
 
         </div>
 
