@@ -13,7 +13,7 @@
 
         <h1>Faça aqui seu orçamento gratuito</h1>
         
-    <label for="servico">Selecione o tipo de serviço:</label>
+    <label class="label" for="servico">Selecione o tipo de serviço:</label>
         
         <select id="servico">
         <option value="sofa">Sofá</option>
@@ -33,9 +33,13 @@
 
     <br><br>
 
-        <button onclick="calcular()">Calcular Orçamento</button>
+        <button class="btn-calcular" onclick="calcular()">Calcular Orçamento</button>
+        <br>
+        
 
         <p id="resultado"> Valor total: R$ 0</p>
+        <br>
+         <button class="whatsapp" onclick="enviarWhatsapp()">Enviar orçamento no WhatsApp</button>
 
         </div>
 

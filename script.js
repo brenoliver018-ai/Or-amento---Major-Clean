@@ -33,6 +33,22 @@ function calcular() {
         currency: "BRL"
     });
     document.getElementById("resultado").innerText= "Valor total: "+ totalFormatado;
+}
 
-   
+function enviarWhatsapp(){
+    let servico = document.getElementById("servico").value
+    let qtd = document.getElementById("qtd").value
+    let resultado = document.getElementById("resultado").innerText
+
+    let mensagem= `Olá, fiz um orçamento da Major Clean.
+
+    Serviço: ${servico}
+    Quantidade: ${qtd}
+    ${resultado}`;
+
+    let seuNumero= "5561998906393";
+    let mensagemFormatadaURL= encodeURIComponent(mensagem);
+    let linkFinal= `https://wa.me/${seuNumero}?text=${mensagemFormatadaURL}`;
+
+    window.open(linkFinal, '_blank');
 }
