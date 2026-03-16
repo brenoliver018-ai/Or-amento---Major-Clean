@@ -19,6 +19,7 @@ body {
 }
 
 .container{
+    margin-top: 1500px;
     border: solid 1px rgba(94, 85, 85, 0.932);
     border-radius: 10px;
     text-align: center;
@@ -125,6 +126,7 @@ select{
     width: 200px;
 }
 /*CAMPO SELECT QTD*/
+
 input{
     padding: 7px;
     border-radius: 8px;
