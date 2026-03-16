@@ -28,7 +28,7 @@
 
         <div class="checkbox-group">
         <input type="checkbox" id="manchas">
-        <label for="manchas">Possuí manchas difíceis. </label>
+        <label for="manchas">Possuí manchas difíceis </label>
         </div>
 
         <button class="btn-calcular" onclick="calcular()">Calcular Orçamento</button>
