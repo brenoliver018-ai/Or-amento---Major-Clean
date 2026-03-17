@@ -1,161 +1,69 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    margin: 0;
 }
 .background{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./assets/background.jpg);
     filter: blur(3px);
     background-size: cover;
     background-position: center;
     z-index: -1;
 }
-
-.container{
-    margin-top: 1500px;
-    border: solid 1px rgba(94, 85, 85, 0.932);
-    border-radius: 10px;
-    text-align: center;
-    padding: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: rgba(255,255,255,0,2);
-    backdrop-filter: blur(12px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
-}
-.container h1{
-    color: white;
-    font-size: 28px;
-    margin-bottom: 25px;
-    font-weight:700;
-}
-.label{
-    color: #e0e0e0;
-    font-size: 18px;
-    margin-bottom: 5px;
-    display: block;
-    text-align: left;
-}
-
-.btn-calcular{
-    background: rgba(2, 161, 253, 0.582);
-    padding: 20px;
-    border-radius: 20px;
-    border: none;
-    font-weight: bold;
-    transition: 0.5s;
-}   
-
-.btn-calcular:hover{
-    background: rgba(85, 192, 253, 0.582);
-    transform: scale(1.05);
-}
-
-.whatsapp{
-    background: rgb(0, 209, 0);
-    padding: 15px;
-    border-radius: 20px;
-    border: none;
-    transition: 0.5s;
-}
-.whatsapp:hover{
-    background: rgb(0, 197, 0) ;
-    transform: scale(1.05);
-}
-#resultado{
-    display: inline-block;
-    padding: 5px;
-    margin: 5px;
-    
-}
-#enviarWhatsapp{
-  opacity: 0;
-  transform:translateY(10px);
-  transition:all 0.7s ease;
-  display: block;
-  margin: 10px auto;
-  
-}
-#enviarWhatsapp.mostrar{
-    opacity: 1;
-    transform: translateY(0);
-    animation: pulse 1.5s infinite;
-}
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.05);}
-100%{transform:scale(1);}
-} 
-
-/*CAIXA SELECT*/
-.campo{
+.navbar{
     display: flex;
-    gap: 5px;
-    flex-direction: column;
+    margin: 0 auto;
+    background:linear-gradient(90deg,#000000 30%,#0401c7a2) 60%;
+    color: white;
+    justify-content: center;
+    text-align: center;
     align-items: center;
-    
+    gap: 15px;
+    height: 100px;
 }
-/*Campo do select Qtd*/
-#qtd{
-    display: block;
-    margin: 1px auto;
-    width: 30px;
-    margin-top: 1px;
-
-}
-/*texto - Quantidade*/
-label[for="qtd"]{
-    color: #e0e0e0;
-    margin-top: 1px;
-
-} 
-/*CAMPO SELECT SERVIÇO*/
-select{
-    padding: 7px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: rgba(255,255,255,0.9);
-    font-size: 14px;
-    cursor: pointer;
-    width: 200px;
-}
-/*CAMPO SELECT QTD*/
-
-input{
-    padding: 7px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    background-color: rgba(255,255,255,0.9);
-    font-size: 14px;
-    cursor: pointer;
-
-}
-/* Checkbox + texto */
-.checkbox-group{
+/*Caixa Logo*/
+.logo{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    color: #e0e0e0;
-    padding-bottom: 20px;
-    padding-top: 5px;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 50px;
 }
-
-.checkbox-group input{
-    margin-right: 5px;
-    border: white solid 1px;
+/*Logo*/
+.logo img{
+    width: 60px;
+    border-radius: 50%;
 }
-
-#resultado{
-    transition: 2.2s;
-    
+/*Caixa Menu*/
+.menu{
+    display: flex;
+    gap: 50px;
+    padding: 10px;
 }
-
-
-
+/*Links Menu*/
+.menu a{
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    font-size:large;
+    transition: 0.4s;
+}
+.menu a:hover{
+    opacity: 0.7;
+}
+.telefone{
+    margin-left: 50px;
+    background:#0559f5;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 4px 11px;
+}
+span{
+    font-size:small;
+    font-weight: bold;
+}
