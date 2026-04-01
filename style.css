@@ -226,7 +226,7 @@ h1{
 .grid-checkbox-nivel{
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    margin-top: -5px;
+    margin-top: -15px;
 }
 .check-item{
     background-color: #b8afaf;
@@ -237,7 +237,7 @@ h1{
     gap: 2px;
     transition: all 0.4s ease;
     min-width: 130px;
-    padding: 20px 10px;
+    padding: 18px 10px;
     text-align: center;
 }
 .check-item:hover{
@@ -249,5 +249,18 @@ h1{
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border-color: #ffffff;
+}
+.check-type{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin:10px;
+}
+.check-type2{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin:10px;
+    margin-top: -20px;
 }
 
