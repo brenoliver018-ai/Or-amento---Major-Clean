@@ -117,21 +117,26 @@ h1{
     text-align: center;
     padding: 5px;
     margin-top: -20px;
+    grid-column: span 2;
 }
 .container-principal{
     background: rgba(85, 87, 82, 0.829);
-    max-width: 900px;
+    max-width: 1000px; /* aumentei um pouco */
     margin: 40px auto;
-    padding: 20px;
+    padding: 25px;
     border-radius: 20px;
     box-shadow: 0 10px 25px #000000;
     min-height: 300px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr; /* 🔥 esquerda maior */
+    gap: 25px;
 }
 .header-passo{
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .numero-passo {
     background-color: #0056b3;
@@ -146,8 +151,9 @@ h1{
 }
 .grid-estofados{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+    
 }
 .card-item{
     border: 1px solid rgb(90, 85, 85);
@@ -155,12 +161,14 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1px;
+    padding: 20px 10px;
     flex-direction: column;
     gap: 2px;
     background-color: #b8afaf;
     cursor: pointer;
     transition: all 0.3s ease;
+    width:210px;
+    height: 30px;
 }
 .card-item:hover{
     transform: scale(1.05);
@@ -202,6 +210,7 @@ h1{
     font-weight: 700;
     color: #000000;
     transition: all 0.4s ease;
+    width: 116px;
 }
 .btn-lugar:hover{
     transform: scale(1.05);
@@ -227,6 +236,7 @@ h1{
     display: flex;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     margin-top: -15px;
+    
 }
 .check-item{
     background-color: #b8afaf;
@@ -239,6 +249,7 @@ h1{
     min-width: 130px;
     padding: 18px 10px;
     text-align: center;
+    width: 136px;
 }
 .check-item:hover{
     transform: scale(1.05);
@@ -262,5 +273,56 @@ h1{
     gap: 1px;
     margin:10px;
     margin-top: -20px;
+}
+
+/*POSIÇÃO DOS PASSOS*/
+
+.passo-1{
+    grid-column: span 2;
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 12px;
+}
+.passo-2{grid-column: 1; grid-row: 3;}
+.passo-3{grid-column: 1; grid-row: 4;}
+.passo-4{grid-column: 1; grid-row: 5;}  
+
+.passo-5{grid-column: 2; grid-row: 3;}  
+.passo-6{grid-column: 2; grid-row: 4;}  
+
+section{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.check-type2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+}
+.check-type2 label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #b8afaf;
+    padding: 10px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    font-size: 13px;
+}
+.check-type2 label:hover{
+    transform: scale(1.02);
+    background-color: #f0f7ff;
+}
+.check-type2 label:has(input:checked){
+    background-color: #ffffff;
+    border: 1px solid #0056b3;
+}
+.check-type2 input{
+    width: 14px;
+    height: 14px;
+    accent-color: #0a0d0fbb;
 }
 
